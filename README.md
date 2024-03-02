@@ -28,7 +28,8 @@ pip install pipenv
 
 #### Initialize Pipenv and Install Dependencies
 
-Navigate to your project directory and set up `pipenv` with the required Python version and dependencies:
+Navigate to the project directory and run the following command to initialize the virtual
+environment and install the required dependencies:
 
 ```bash
 pipenv install
@@ -45,7 +46,21 @@ pipenv shell
 Then, run the Python script to start logging data:
 
 ```bash
-python myoware_logger.py
+pipenv run python myoware_logger.py
+```
+
+if you have problems with premissions, you can run the script with sudo:
+
+```bash
+sudo pipenv run python myoware_logger.py
+```
+
+### Deleting the data
+
+To delete the data, you can run the following command:
+
+```bash
+suod rm data/*
 ```
 
 #### Key Presses
